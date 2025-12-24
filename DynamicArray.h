@@ -54,7 +54,9 @@ public:
 
     //OPERATOR OVERLOADING 
 
-    int& operator[](int index); //Köşeli parantez operatörü
+    int& operator[](int index); //yazma için
+
+    const int& operator[](int index) const; //Okuma içinn
 
     DynamicArray operator+(const DynamicArray& other) const; //İki DynamicArray nesnesini birleştirir - Yeni bir DynamicArray döndürür
 
